@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<title>TFG SCRIPT</title>
+</head>
+
+<h1>TFG SCRIPT</h1>
+
+<!--<canvas id="canvas" width="1024" height="768"></canvas>-->
+
+<!------ TO DO: Modify this line to switch between input files ------>
+<!--<script type="text/javascript" src="Lanzarote.json.js"></script>-->
+
+<!---- This is were your triangulation code will be ---->
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="tests.js"></script>
+
+<script type="text/javascript">
+//========= Auxiliary objects and data =========//
+const EXTRA_BUFFER = 10;
+
+// default styles
+style = {
+  point: {
+    color: "Black",
+    fill: "Black",
+    arc1: 0,
+    arc2: 2 * Math.PI
+  }
+}
+
+var triangles; // Used to store the resulting triangles of the triangulation
+
+function runScript() {
+	script();
+}
+
+
+</script>
+
+<br><br>
+<button onclick="runScript()">Run Script!</button>
